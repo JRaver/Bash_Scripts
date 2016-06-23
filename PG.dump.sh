@@ -80,7 +80,7 @@ if [[ $NTYPE = "pg_dumpall" && -n "$DB" ]]; then
 fi
 DB1=$DB
 if [[ -n $SUFFIX && -n $DB  ]];then
-DB1="$DB-$SUFFIX"
+    DB1="$DB-$SUFFIX"
 fi
 DUMP_FM="$DUMP_DIR/$host-$timestamp"
 if [[ -n $DB   && -n $SCHEMADUMP ]];then
